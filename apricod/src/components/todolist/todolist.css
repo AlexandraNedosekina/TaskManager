@@ -1,0 +1,36 @@
+.task-list{
+	text-align: left;
+	list-style: none;
+	padding: 0;
+}
+.task{
+	padding: 10px !important;
+	cursor: pointer;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 7px;
+	margin:5px;
+}
+.task:hover{
+	background: rgba(0, 181, 173, 0.1);
+
+}
+.action-icon{
+	visibility: hidden;
+}
+.task:hover .action-icon{
+	visibility: visible;
+}
+.done{
+	text-decoration: line-through;
+	color: #b86ae8;
+}
+.todo-input{
+	background: none;
+	border: none !important;
+	width: auto;
+}
+.todo-input:focus{
+	background: none;
+	border: none !important;
+
+}
