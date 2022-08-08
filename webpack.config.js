@@ -5,11 +5,14 @@ module.exports = {
     	filename: "bundle.js",
     	path: path.resolve(__dirname, "public"),
   },
+  devServer: {
+    hot: false
+  },
   module: {
     rules:[
       {
         test: /\.(js|jsx)$/,
-        use: 'babel-loader',
+        use: ['babel-loader'],
         exclude: /(node_modules|bower_components)/,
       },
       {
